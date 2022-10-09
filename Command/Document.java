@@ -15,14 +15,18 @@ public class Document {
     }
 
     public String append(String line){
-        return "";
+        lines.add(line);
+        return "The line has been appended to the document";
     }
 
     public String write(String line){
-        return "";
+        lines = new ArrayList<String>();
+        lines.add(line);
+        return "The line was written to the file";
     }
 
     public String save(){
-        return "";
+        FileManipulator.writeFile(fileName, lines);
+        return "The file has been saved.";
     }
 }
