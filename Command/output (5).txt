@@ -1,0 +1,38 @@
+Enter document name: todo.txt
+Enter Command: view
+__________
+
+__________
+
+
+Enter Command: append
+Enter Text: laundry
+The line has been appended to the document.
+
+Enter Command: append
+Enter Text: dishes
+The line has been appended to the document.
+
+Enter Command: view
+_________________
+
+|     laundry     |
+|     dishes     |
+_________________
+
+
+Enter Command: save
+The file has been saved.
+Enter Command: write
+Enter Text: homework
+The line was written to the file
+
+Enter Command: view
+__________________
+
+|     homework     |
+__________________
+
+
+Enter Command: quit
+Goodbye
