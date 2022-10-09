@@ -1,4 +1,4 @@
-package command;
+package Command;
 
 public abstract class Command {
     protected Document document;
