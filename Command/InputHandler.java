@@ -1,7 +1,6 @@
 package Command;
 
 import java.util.HashMap;
-
 import javax.swing.text.Document;
 
 public class InputHandler {
