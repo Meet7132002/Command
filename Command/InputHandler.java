@@ -4,6 +4,7 @@ import java.util.HashMap;
 import javax.swing.text.Document;
 /**
  * Takes input and redirects the user to the appropriate commmand prompt
+ * @authors Meet Patel, Shea Rappold, Joe Zelinsky, and Jacob Davidson
  */
 public class InputHandler {
     

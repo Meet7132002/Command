@@ -3,6 +3,7 @@ package Command;
 import java.util.ArrayList;
 /** 
  * A file for a user to modify and view
+ * @authors Meet Patel, Shea Rappold, Joe Zelinsky, and Jacob Davidson
  */
 public class Document {
     private String fileName;

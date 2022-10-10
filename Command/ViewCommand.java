@@ -1,6 +1,7 @@
 package Command;
 /**
  * Views the document
+ * @authors Meet Patel, Shea Rappold, Joe Zelinsky, and Jacob Davidson
  */
 public class ViewCommand extends Command{
     protected Document document;

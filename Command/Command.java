@@ -1,6 +1,7 @@
 package Command;
 /**
  * Parent class for commands
+ * @authors Meet Patel, Shea Rappold, Joe Zelinsky, and Jacob Davidson
  */
 public abstract class Command {
     protected Document document;
