@@ -1,5 +1,7 @@
 package Command;
-
+/**
+ * Views the document
+ */
 public class ViewCommand extends Command{
     private Document document;
 
@@ -8,7 +10,7 @@ public class ViewCommand extends Command{
     }
 
     public String execute(){
-        document.view();
-        return null;
+        String print=document.view();
+        return print;
     }
 }

@@ -1,7 +1,9 @@
 package Command;
 
 import java.util.ArrayList;
-
+/** 
+ * A file for a user to modify and view
+ */
 public class Document {
     private String fileName;
     private ArrayList<String> lines;
@@ -9,6 +11,10 @@ public class Document {
         this.fileName = fileName;
         lines = FileManipulator.readFile(fileName);
     }
+    /**
+     * Views the document
+     * @return the current state of the document
+     */
     public String view() {
         String data = border() + "\n\n";
         int count = 0;
@@ -22,15 +28,29 @@ public class Document {
         data += border() + "\n";
         return data;
     }
+    /**
+     * Adds a line to the document containing changes inputted by the user
+     * @param line
+     * @return confirmation that the line has been added to the file
+     */
     public String append(String line) {
         lines.add(line);
         return "The line has been appended to the document";
     }
+    /**
+     * Clears out existing lines from the document and adds a new one inputted by the user
+     * @param line
+     * @return confirmation that the line was written
+     */
     public String write(String line) {
         lines = new ArrayList<String>();
         lines.add(line);
         return "The line was written to the file";
     }
+    /**
+     * Writes the file based upon changes made by the user using the file manipulator
+     * @return Confirmation that the file was saved or notify the user that there was an error
+     */
     public String save() {
         FileManipulator.writeFile(fileName, lines);
         return "The file has been saved.";
