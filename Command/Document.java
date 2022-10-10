@@ -12,10 +12,10 @@ public class Document {
     public String view() {
         String data = border() + "\n\n";
         int count = 0;
-        int longest = LongestLine();
+        int longest = Longest();
         while(count < lines.size()) {
             int numSpaces = longest - lines.get(count).length();
-            String space = spaceMaker(numSpaces);
+            String space = Space(numSpaces);
             data += "|      " + lines.get(count) + space + "|\n";
             count++;
         }
@@ -36,18 +36,18 @@ public class Document {
         return "The file has been saved.";
     }
 
-    //creates the correctly formatted upper and lower boarder
+    //creates the upper and lower border
     private String border() {
         String borders = "";
         int count = 0;
-        while(count<(LongestLine()+7)) {
+        while(count<(Longest()+7)) {
             borders+="_";
         }
         return borders;
     }
 
     //finds the longest line in the array and adds 6
-    private int LongestLine() {
+    private int Longest() {
         int longest = 0;
         int count = 0;
         while(count < lines.size()) {
@@ -58,7 +58,7 @@ public class Document {
         return (longest + 6);
     }
     //numSpaces takes in the required spaces to be printed as an integer
-    private String spaceMaker(int numSpaces) {
+    private String Space(int numSpaces) {
         int count = 0;
         String space = "";
         while(count < numSpaces) {
