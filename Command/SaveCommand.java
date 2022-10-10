@@ -6,6 +6,7 @@ public class SaveCommand extends Command {
     }
 
     public String execute(){
-        return null;
+        String print = document.save();
+        return print;
     }
 }
