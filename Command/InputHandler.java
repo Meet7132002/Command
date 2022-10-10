@@ -2,11 +2,17 @@ package Command;
 
 import java.util.HashMap;
 import javax.swing.text.Document;
-
+/**
+ * Takes input and redirects the user to the appropriate commmand prompt
+ */
 public class InputHandler {
     
     private HashMap<String, Command> commands;
 
+    /**
+     * Adds categories for the user to input to a hashmap
+     * @param document
+     */
     public InputHandler(Document document){
         commands = new HashMap<String, Command>();
 
@@ -21,6 +27,10 @@ public class InputHandler {
         commands.put("save", save);
     }
 
+    /**
+     * Reads the input
+     * @param data
+     */
     public void inputEntered(String data){
         if (data.equalsIgnoreCase("view")) {
             commands.get("View");
