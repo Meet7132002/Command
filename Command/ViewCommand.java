@@ -8,7 +8,7 @@ public class ViewCommand extends Command{
     }
 
     public String execute(){
-        document.view();
-        return null;
+        String print=document.view();
+        return print;
     }
 }
