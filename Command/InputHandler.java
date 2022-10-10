@@ -3,8 +3,9 @@ package Command;
 import javax.swing.text.Document;
 
 public class InputHandler {
-    private String HashMap(String command){
-        return "";
+    
+    private HashMap<String, Command>{
+        
     }
 
     public Document InputHandler(Document document){
