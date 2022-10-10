@@ -13,7 +13,9 @@ public class WriteCommand extends Command {
     }
 
     public String execute(){
-        String print=document.write(in.nextLine());
+        System.out.println("Enter text:");
+        String input=in.nextLine();
+        String print=document.write(input);
         return print;
     }
 }
