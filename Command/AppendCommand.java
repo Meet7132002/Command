@@ -1,7 +1,9 @@
 package Command;
 
 import java.util.Scanner;
-
+/**
+ * Adds a line to the existing document
+ */
 public class AppendCommand extends Command {
     private Scanner in;
 

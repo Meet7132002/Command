@@ -1,5 +1,7 @@
 package Command;
-
+/**
+ * Parent class for commands
+ */
 public abstract class Command {
     protected Document document;
 
