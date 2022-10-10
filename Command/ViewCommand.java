@@ -6,6 +6,7 @@ public class ViewCommand extends Command{
     }
 
     public String execute(){
+        document.view();
         return null;
     }
 }
