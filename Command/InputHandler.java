@@ -4,7 +4,7 @@ import javax.swing.text.Document;
 
 public class InputHandler {
     
-    private HashMap<String, Command>{
+    private HashMap<String, command>{
         
     }
 
